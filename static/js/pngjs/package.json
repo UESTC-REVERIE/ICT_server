@@ -1,0 +1,126 @@
+{
+  "_from": "pngjs",
+  "_id": "pngjs@7.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==",
+  "_location": "/pngjs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "pngjs",
+    "name": "pngjs",
+    "escapedName": "pngjs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pngjs/-/pngjs-7.0.0.tgz",
+  "_shasum": "a8b7446020ebbc6ac739db6c5415a65d17090e26",
+  "_spec": "pngjs",
+  "_where": "A:\\Code\\AiLab\\ICT\\Server",
+  "bugs": {
+    "url": "https://github.com/pngjs/pngjs/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Alexandre Paré"
+    },
+    {
+      "name": "Gaurav Mali"
+    },
+    {
+      "name": "Gusts Kaksis"
+    },
+    {
+      "name": "Kuba Niegowski"
+    },
+    {
+      "name": "Luke Page"
+    },
+    {
+      "name": "Pietajan De Potter"
+    },
+    {
+      "name": "Steven Sojka"
+    },
+    {
+      "name": "liangzeng"
+    },
+    {
+      "name": "Michael Vogt"
+    },
+    {
+      "name": "Xin-Xin Wang"
+    },
+    {
+      "name": "toriningen"
+    },
+    {
+      "name": "Eugene Kulabuhov"
+    }
+  ],
+  "deprecated": false,
+  "description": "PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & sync with full test suite.",
+  "devDependencies": {
+    "browserify": "17.0.0",
+    "buffer-equal": "1.0.1",
+    "connect": "3.7.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
+    "nyc": "15.1.0",
+    "prettier": "2.8.4",
+    "puppeteer": "19.7.1",
+    "serve-static": "1.15.0",
+    "tap-dot": "2.0.0",
+    "tape": "5.6.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "example": "examples",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=14.19.0"
+  },
+  "files": [
+    "browser.js",
+    "lib/"
+  ],
+  "homepage": "https://github.com/lukeapage/pngjs",
+  "keywords": [
+    "PNG",
+    "decoder",
+    "encoder",
+    "js-png",
+    "node-png",
+    "parser",
+    "png",
+    "png-js",
+    "png-parse",
+    "pngjs"
+  ],
+  "license": "MIT",
+  "main": "./lib/png.js",
+  "name": "pngjs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pngjs/pngjs.git"
+  },
+  "scripts": {
+    "browserify": "browserify lib/png.js --standalone png > browser.js",
+    "build": "yarn prepublish",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary tape test/*-spec.js",
+    "lint": "eslint .",
+    "prepublish": "yarn browserify",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "test": "yarn lint && yarn prettier:check && tape test/*-spec.js | tap-dot && node test/run-compare"
+  },
+  "version": "7.0.0"
+}

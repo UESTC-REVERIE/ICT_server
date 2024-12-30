@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>3D Model Preview Web</title>
+		<link rel="shortcut icon" href="/static/img/icon.ico">
+		<style>
+			body{
+				overflow: hidden;
+				margin: 0px;
+			}
+			#preview {
+				position: fixed;
+				top: 20px;
+				left: 0px;
+				max-width: 200px; /* 设置最大宽度 */
+				max-height: 200px; /* 设置最大高度 */
+				width: auto; /* 宽度自适应 */
+				height: auto; /* 高度自适应 */
+				border: 1px solid #ccc;
+			  }
+			  #preview img {
+				max-width: 100%; /* 图片最大宽度为容器宽度的百分比 */
+				max-height: 100%; /* 图片最大高度为容器高度的百分比 */
+				width: auto; /* 宽度自适应 */
+				height: auto; /* 高度自适应 */
+			  }
+		</style>
+	</head>
+	<body>
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "/static/js/three/build/three.module.js",
+				"three/addons/": "/static/js/three/examples/jsm/"
+			}
+		}
+	</script>
+	<progress id="progressBar" value="0" max="100"></progress>
+    <script type="module" src="/static/js/main.js"></script>
+	<!-- <canvas style="background-color: #ffffff;" id="canvas" width="0" height="0"></canvas> -->
+	<div id="preview"></div>
+	</body>
+</html>

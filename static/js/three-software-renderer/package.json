@@ -1,0 +1,61 @@
+{
+  "_from": "three-software-renderer",
+  "_id": "three-software-renderer@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LONzHpmI2aN69TSFldDdQFP2cWBs2BtDqfzPbNEiNUryJvtJaWiVqMWfI73YST0VFKoaIu9DrdcEkD6JuxsKCA==",
+  "_location": "/three-software-renderer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "three-software-renderer",
+    "name": "three-software-renderer",
+    "escapedName": "three-software-renderer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/three-software-renderer/-/three-software-renderer-1.2.0.tgz",
+  "_shasum": "c05e4077dd10e15369106e08cc5018132f212799",
+  "_spec": "three-software-renderer",
+  "_where": "A:\\Code\\AiLab\\ICT\\Server",
+  "author": {
+    "name": "Martin Naumann"
+  },
+  "bugs": {
+    "url": "https://github.com/avgp/three-software-renderer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "three": "^0.82.1"
+  },
+  "deprecated": false,
+  "description": "Universal Three.js in-memory renderer",
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "pngjs": "^3.0.0"
+  },
+  "homepage": "https://github.com/avgp/three-software-renderer#readme",
+  "keywords": [
+    "three.js",
+    "webgl",
+    "node",
+    "browser"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "three-software-renderer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avgp/three-software-renderer.git"
+  },
+  "scripts": {
+    "example": "node example/main.js",
+    "test": "mocha"
+  },
+  "version": "1.2.0"
+}
